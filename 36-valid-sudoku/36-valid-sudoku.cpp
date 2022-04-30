@@ -39,7 +39,7 @@ public:
                 //for subboxes: we will get the subbox where r and c are 
                 int a=(j/3)+(i/3)*3;
                 int b=(j%3)+(i%3)*3;
-                c=board[a][b]; //c is updates
+                c=board[a][b]; //c is updated
                 
                 if(c!='.')
                 {
