@@ -13,6 +13,7 @@ public:
         }
         b=nums.size()-r-w; //the remaining are blue
         nums.clear(); //clears the vector
+        //after counting red,white,blue we are pushing them in the vector and doing till the values of r,w,b is 0
         while(r--)
         {
             nums.push_back(0);
