@@ -1,35 +1,14 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        
-        int f=0,r=nums.size()-1;
-        int k=0;
-        while(f<=r)
+        int index=0;
+        for(int i=0;i<nums.size();i++)
         {
-            if(nums[f]==val)
+            if(nums[i]!=val)
             {
-                if(nums[r]==val)
-                {
-                    //f checks if ele is duplicate or not
-                    r--;
-                }
-                    else
-                    {
-                        //swap values
-                        nums[f]=nums[r];
-                        f++;
-                        r--;
-                        k++;
-                    }
-            }
-            
-            
-            else
-            {
-                f++;
-                k++;
+                nums[index++]=nums[i];
             }
         }
-        return k;
+        return index;
     }
 };
